@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Web Scrapper task</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/app.min.css">
+  </head>
+    <body>
+      <section class="container">
+        <header><h1>Simple web scraper</h1></header>
+          <section>
+            <div class="input-group">
+              <input type="text" class="form-control url" placeholder="enter website domain name" id="url">
+              <span class="input-group-btn"><button id="analysBtn" class="btn btn-success">analys</button></span>
+            </div>
+            <div class="loader">
+              <img src="ellipsis.gif">
+            </div>
+            <div class="errorWrapper">
+              <span class="text-danger"></span>
+            </div>
+          </section>
+      </section>
+      <section class=".container scrapDetails">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>HTML Version</th>
+              <th>Title</th>
+              <th>Heading Levels <span class="headingCount"> total 0</span></th>
+              <th>External Links <span class="externalLinkCount"> total 0</span></th>
+              <th>Internal Links <span class="internalLinkCount"> total 0</span></th>
+              <th>Inaccessiable Links<span class="inaccessCount"> total 0</span></th>
+              <th>Login Form</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="htmlVersionCol"></td>
+              <td id="titleCol"></td>
+              <td id="headingsCol"></td>
+              <td id="externalLinksCol"></td>
+              <td id="internalLinksCol"></td>
+              <td id="inaccessiableLinksCol"></td>
+              <td id="loginFormCol"></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <script  src="https://code.jquery.com/jquery-3.2.1.min.js" 
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+      <script src="/js/app.min.js"></script>
+    </body>
+</html>

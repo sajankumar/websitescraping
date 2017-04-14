@@ -1,0 +1,23 @@
+{
+  "name": "scrapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sajankumar vijayan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "lodash": "^4.17.4",
+    "webscrapper": "^1.0.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-asset-injector": "^0.1.0",
+    "grunt-contrib-cssmin": "^2.0.0",
+    "grunt-contrib-uglify": "^2.3.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
