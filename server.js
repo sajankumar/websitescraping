@@ -2,7 +2,7 @@ let express = require('express');
 let scrapper = require('webscrapper');
 let path = require('path');
 let app = express();
-
+const PORT = process.env.PORT || 3000;
 app.use(express.static('public'));
 
 app.get('/', function (req, res, next) {
@@ -18,7 +18,6 @@ app.all('/analys/*', function (req, res, next) {
     });
 });
 
-const PORT = process.env.PORT || 3000;
 app.listen(PORT, function() {
     console.log('server is running');
 });
